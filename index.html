@@ -3,25 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css">
     <title>Accueil</title>
 </head>
 <body>
 
     <!-- Header -->
-     <header>
-
+     <header class="header">
+        <p class="logo">Roberto C Previdence</p>
+        <nav class="menu">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projet">Projets</a></li>
+                <li><a href="#compet">Competences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
      </header>
 
-     <!-- Section -->
-     <section>
+     <main>
+        <!--Secation Bienvenue-->
+        <section class="bienvenue" id="accueil">
+            <div class="hero-text">
+                <h1 class="title">Je suis Roberto Carlos Previdence, développeur web en devenir passionné par le web et le design</h1>
 
-     </section>
+            <a href="#">Voir mes projets<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
 
-     <!-- Footer -->
-      <footer>
-        
-      </footer>
-    
+            <img class="image1" src="/images/image1.svg" alt="développeur" width="300">
+        </section>
+
+        <!--Section Apropos-->
+        <section id="about" class="apropos">
+            <h2 class="title2">À propos</h2>
+            <div class="about-content">
+                <div class="hero-text">
+                 <p class="desc">
+                    Je m’appelle Roberto Carlos Previdence, passionné 
+                    par la création de sites web modernes et 
+                    interactifs.
+                    Je suis actuellement étudiant en développement 
+                    web et je cherche à améliorer mes compétences 
+                    en HTML, CSS et JavaScript à travers des projets 
+                    pratiques.
+                    J’aime transformer mes idées en projets concrets 
+                    et apprendre continuellement de nouvelles 
+                    technologies.
+                </p>
+            <a href="#">Télécharger mon CV<i class="fa-solid fa-download"></i></a>
+            </div>
+
+            <img class="image2" src="/images/image2.png" alt="Illustration développeur">
+            </div>
+        </section>
+
+        <!--Section Mes Projets-->
+        <section id="projet" class="mesprojets">
+            <h2 class="title3">Mes Projets</h2>
+            <div class="container">
+                <div class="project-card">
+                    <h3>Mini interactif</h3>
+                    <p>Un mini-jeu interactif développé 
+                    en JavaScript qui utilise les 
+                    événements du DOM pour gérer 
+                    les interactions de l’utilisateur de 
+                    manière dynamique</p>
+                    <span>HTML • CSS • JavaScript</span>
+                    <a href="#">Voir<i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Site Vitrine Personnel</h3>
+                    <p>Un site web vitrine conçu pour 
+                    présenter mon profil, mes 
+                    compétences et mes projets 
+                    avec une structure claire et une 
+                    interface simple.</p>
+                    <span>HTML • CSS</span>
+                    <a href="#">Voir<i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Formulaire de contact interactif</h3>
+                    <p>Un formulaire de contact avec 
+                    validation des champs en 
+                    JavaScript afin d’améliorer 
+                    l’expérience utilisateur et éviter 
+                    les erreurs de saisie.</p>
+                    <span>HTML • CSS • JavaScript</span>
+                    <a href="#">Voir mes projets<i class="fa-solid fa-chevron-down"></i></a>
+                </div>
+            </div>  
+        </section>
+
+        <!--Section Competences-->
+        <section id="compet" class="competences">
+            <h2 class="title3">Mes Competences</h2>
+            <div class="container2">
+                <div>
+                    <h3>Soft Skills</h3>
+                    <p>Gestion de Projet</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 70%;"></div>
+                        </div>
+
+                        <p>Résolution de problème</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%;"></div>
+                        </div>
+
+                        <p>Adaptabilité</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%;"></div>
+                        </div>
+                        
+                    </div>
+
+                    <div>
+                        <h3>Hard Skills</h3>
+                        <p>Gestion de Projet</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%;"></div>
+                        </div>
+
+                        <p>Résolution de problème</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%;"></div>
+                        </div>
+
+                        <p>Adaptabilité</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%;"></div>
+                        </div>
+                        
+                    </div>
+             </div>
+        </section>
+
+        <!--Section Formulaire-->
+        <section id="contact" class="contact">
+            <h3 class="title4"> Vous avez un <span class="highlight">projet en tête</span>?<br>N'esitez pas à <span class="highlight">me contacter</span></h3>
+                
+            <form class="formulaire">
+                    <label for="prenom">Votre Prénom</label>
+                    <input type="text" id="prenom" placeholder="Roberto C">
+                    <label for="nom">Votre Nom</label>
+                    <input type="text" id="nom" placeholder="Previdence">
+                    <label for="sujet">Sujet</label>
+                    <input type="text" id="sujet" placeholder="je veux un site vitrine">
+                    <label for="message">Votre Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Écris ton message ici..."></textarea>
+                    <button type="submit">Envoyer <i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </section>  
+    </main>
+
+    <!--Section Footer-->
+    <footer class="footer">
+        <p>Designed by Roberto C Previdence with HTML CSS JS</p>
+        <p>Tous droits réservés 2025</p>
+    </footer>
+
+     
 </body>
 </html>
