@@ -354,3 +354,56 @@ img{
 .footer span {
   font-weight: bold;
 }
+
+
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+ .menu ul {
+    flex-direction: row;     /* reste horizontal */
+    flex-wrap: wrap;         /* passe à la ligne si besoin */
+    justify-content: center;
+    gap: 16px;
+  }
+
+
+  .bienvenue {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image2 {
+    align-self: center;     /* clé ici */
+    margin: 20px auto 0;    /* centre horizontalement */
+    max-width: 100%;
+  }
+
+  .contact .title4 {
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .container,
+  .container2 {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+}
+
+
