@@ -358,6 +358,10 @@ img{
 
 @media (max-width: 768px) {
 
+  :root {
+    --section-padding: 20px;
+  }
+
   .header {
     flex-direction: column;
     align-items: center;
